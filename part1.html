@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Let's date! A funny place where date who you like :)</title>
+        <meta name="author" content="Massimo Lavelli">
+    </head>
+    <body>
+        <h1>Please Enter Your Details For Our Dating Website!</h1>
+        <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php"
+              method="post" enctype="multipart/form-data"> 
+            <fieldset>
+                <legend>Your face</legend>
+                <label for="yourimage">Your image:</label>
+                <input type="file" id="yourimage" name="yourimage" required><br>
+                <label for="preview">Image preview:</label>
+                <img id="preview">
+            </fieldset>
+            <fieldset>
+                <legend>Your General Details</legend>
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Your full name" required><br>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male" required>Male
+                <input type="radio" name="gender" value="male" required>Female<br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" max="99" step="1" value="18" required><br>
+                <label for="birthdate">Date of birth:</label>
+                <input type="date" id="birthdate" name="birthdate"><br>
+                <label for="favcolour">Favorite color:</label>
+                <input type="color" id="favcolour" name="favcolour"><br>
+                <label>Which country:</label>
+                <select name="country">
+                    <option></option>
+                    <option value="sp">Spain</option>
+                    <option value="de">Germany</option>
+                    <option value="it">Italy</option>
+                    <option value="au">Australia</option>
+                    <option value="jp">Japan</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Your Indicators</legend>
+                <label for="height">Height:</label>
+                Short <input type="range" id="height" name="height" min="0" max="100" value="50"> Tall<br>
+                <label for="salary">Salary:</label>
+                Poor <input type="range" id="salary" name="salary" min="0" max="100" value="50"> Rich<br>
+            </fieldset>
+            <fieldset>
+                <legend>Your Contact Information</legend>
+                <label for="youremail">Email:</label>
+                <input type="email" id="youremail" name="youremail" required><br>
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile"><br>
+                <label for="favcolour">Address:</label>
+                <textarea id="address" name="address">
+                </textarea><br>
+                <label>Method to contact you:</label>
+                <input type="checkbox" name="wayofcontact" value="email">Email
+                <input type="checkbox" name="wayofcontact" value="whatsapp">Whatsapp
+                <input type="checkbox" name="wayofcontact" value="inappchat">In-app chat<br>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
